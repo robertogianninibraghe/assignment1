@@ -17,10 +17,13 @@ struct parameters
     double tolerance_s =10^(-6);
     T initial_cond;
     double alpha_0 = 1;
+    double mu=0.2;
     double sigma=0.5;
     unsigned max_it=10000;
-    std::function<double(const std::vector<double> &)> f;
-    std::function<std::vector<double>(const std::vector<double> &)> df;
+    //std::function<double(const std::vector<double> &)> f;
+    F f;
+    //std::function<std::vector<double>(const std::vector<double> &)> df;
+    Fn df;
     T strategy;
     unsigned dim=2;
 
