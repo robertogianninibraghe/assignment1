@@ -1,5 +1,4 @@
-#Challenge 1. A gradient method for the minimization of a
-multivariate function
+# Challenge 1. A gradient method for the minimization of a multivariate function
 
 Repository for the first challenge of the course PACS. 
 <br>
@@ -13,3 +12,4 @@ Also gave the option to compute the learning rate $\alpha_k$ by exponential deca
 $$\alpha_k = \alpha_0 e^{- \mu k}$$
 Or inverse decay:
 $$\alpha_k = \frac{\alpha_0}{1 + \mu k}$$
+
