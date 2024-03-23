@@ -52,5 +52,9 @@ int main(int argc, char **argv)
     cout << "Solution with Armijo:"  << std::endl;
     print_vec(res_arm);
 
+    vec res_arm_fin_diff=solve_arm(f_test);
+    cout << "Solution with Armijo with finite differences:"  << std::endl;
+    print_vec(res_arm_fin_diff);
+
     return 0;
 }
