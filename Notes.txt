@@ -1,0 +1,8 @@
+README is clear and detailed.
+
+Functions definition outside the class definition would make the code more readable.
+The classes shouldn't all be defined in the same header file.
+
+You shouldn't overload the operator() to implement the main method of a class. If you want the minimization to be easily called via () you should implement a template function, otherwise inside a class you should define a method, for instance minimizer2::minimize().
+
+I would have expected you to let the user choose the optimization parameters, the step size for the finite difference approximation and the minimization strategy runtime, using GetPot for instance.
